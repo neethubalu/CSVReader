@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "54754d87-293f-4a82-a329-4b85905cc5c6",
+    "name": "CSV_Reader_Postman_Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "32521704"
+  },
+  "item": [
+    {
+      "name": "upload",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "file",
+              "type": "file",
+              "src": "/Users/baluspillai/Downloads/exercise.csv"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/csv/reader/upload",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "csv",
+            "reader",
+            "upload"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetchAll",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/csv/reader/fetch/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "csv",
+            "reader",
+            "fetch",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "fetchByCode",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/csv/reader/fetch/{code}",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "csv",
+            "reader",
+            "fetch",
+            "{code}"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteAll",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/csv/reader/delete",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "csv",
+            "reader",
+            "delete"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
